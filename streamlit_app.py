@@ -32,9 +32,27 @@ st.markdown("""
             margin: 5px 0;
         }
 
-        .st-emotion-cache-hzygls ea3mdgi6{
-            background-color: #37b366;
-            }
+        /* Target using partial class names */
+        div[class*="ea3mdgi6"],
+        div[class*="ea3mdgi2"],
+        div[class*="message-container"] {
+            background-color: #37b366 !important;
+        }
+            
+        /* Force background color for user messages using multiple selectors */
+        div[class*="stChatMessage"][class*="user"],
+        div[class*="message"][class*="user"],
+        div[data-test="user-message"],
+        .st-emotion-cache-*[data-test="user-message"] {
+            background-color: #37b366 !important;
+            color: white !important;
+        }
+
+        /* Try targeting with attribute contains */
+        div[class*="emotion"][data-test="user-message"],
+        div[class*="chat"][data-test="user-message"] {
+            background-color: #37b366 !important;
+        }
         
         /* User message specific styling */
         .stChatMessage[data-test="user-message"] {
