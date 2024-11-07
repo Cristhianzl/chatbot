@@ -31,6 +31,10 @@ st.markdown("""
             padding: 10px;
             margin: 5px 0;
         }
+
+        .st-emotion-cache-hzygls ea3mdgi6{
+            background-color: #37b366;
+            }
         
         /* User message specific styling */
         .stChatMessage[data-test="user-message"] {
@@ -89,12 +93,9 @@ st.image("https://angular-medcopy.s3.us-east-2.amazonaws.com/medcopySymbol.png",
 
 
 st.write(
-    "Seja bem vindo ao nosso Chatbot. Faça sua pergunta :)",
+    "Seja bem vindo ao MedBot",
 )
 
-st.write(
-    "Um produto MedCopy.",
-)
 
 st.markdown(
     "[www.medcopytool.com/br](https://www.medcopytool.com/br)",
