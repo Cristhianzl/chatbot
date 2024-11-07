@@ -132,8 +132,6 @@ st.markdown(
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-LANGFLOW_URL = "https://api.langflow.astra.datastax.com/lf/f0e51f4c-fb9c-4dfe-a815-8e9ce31ee6b0/api/v1/run/2260bcd5-f6a4-46c0-b2b4-a6e07051fc9e"
-
 def get_langflow_response(messages):
     try:
         payload = {
