@@ -1,6 +1,15 @@
 import streamlit as st
 import requests
 import json
+import os
+
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
+
+LANGFLOW_URL = os.getenv('LANGFLOW_URL')
+ASTRA_DB_TOKEN = os.getenv('ASTRA_DB_TOKEN')
 
 # Set page configuration with light theme
 st.set_page_config(
@@ -149,7 +158,7 @@ def get_langflow_response(messages):
             json=payload,
             headers={
                 "Content-Type": "application/json",
-                "Authorization": "Bearer AstraCS:EbweQrmbNseiLSJquyUGlQyy:dfdd3dabb5af7217a4e06f53624cde7c04274bea76a2726782d454b171e66ae3"
+                "Authorization": f"Bearer {ASTRA_DB_TOKEN}"
             }
         )
         
