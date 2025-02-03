@@ -139,15 +139,17 @@ def get_langflow_response(messages):
             "output_type": "chat",
             "input_type": "chat",
             "tweaks": {
-                "ChatInput-Noppm": {},
-                "AstraVectorStoreComponent-kKKyc": {},
-                "ParseData-QyC2l": {},
-                "Prompt-oEZUj": {},
-                "ChatOutput-4GRdO": {},
-                "OpenAIEmbeddings-xaRbH": {},
-                "OpenAIModel-W8yg9": {},
-                "note-nZxhu": {},
-                "note-mXSOp": {}
+                "ChatInput-aIFQn": {},
+                "ParseData-phjlM": {},
+                "Prompt-1E3j8": {},
+                "SplitText-OL2ii": {},
+                "ChatOutput-fYxQ9": {},
+                "OpenAIEmbeddings-rzlEi": {},
+                "OpenAIEmbeddings-d2jxq": {},
+                "AstraDB-fkkT8": {},
+                "AstraDB-1FrF7": {},
+                "Agent-tPbjm": {},
+                "Directory-3XGz5": {}
             }
         }
         
